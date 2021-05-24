@@ -15,7 +15,7 @@ Spend no more than 4 hours on this assessment.  It is not intended that you achi
 
 **Note:  UAT environment is reset daily, do not expect data to persist.**
 
-**Note:  Account credentials for the tenant will be provided to you separately. **
+**Note:  Account credentials for the tenant will be provided to you separately.**
 
 Bonus points (if you have capacities to do all of these, you are more than welcome to show us your skills and experience): 
 
@@ -26,8 +26,6 @@ Bonus points (if you have capacities to do all of these, you are more than welco
 - Failed tests are retried a few times before failing
 - Documentation and comments as required
 - Tests can be retried multiple time without failing
-
-**Base URL**:  https://qa-tech-test-demo.uat.internihr.ninja/auth/login
 
 
 ### User Story #1  - Easy
