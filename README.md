@@ -116,26 +116,38 @@ Verify that a salary figure is visible
 
 ```
 As an authenticated user <Admin>
-When I visit my profile page (left-hand side)
-Then I should see my profile page
+When I select People link from the left-hand side
+Then I should see People page
+When I input "Lyanna" into the Search field
+Then I should I see "Lyanna" as the only result
+When I select "Lyanna"
+Then I should see Lyanna's Profile Page
 When I scroll down to 'Email Address' section
+Then I should see that the second email entry (demo@intellihr.com.au) has the tag 'Personal'
+
 Then I click the kebab button on the second email entry
 Then I should see 'Edit' and 'Delete' option
 Then I select 'Edit' option
-Then I change the Email Type to the other type (eg. Personal -> work) or (Work -> Personal)
+Then I select Work Email Address radio button
 Then I press the Save button
 Then I am returned to the profile page
-Verify the second email entry has the correct tag (eg. if selected work it should show 'work' for that email)
+Verify the second email entry (demo@intellihr.com.au) now has the tag 'Work'
 ```
 
 ### User Story #9 - Easy
 
 ```
-As an authenticated Manager (<Manager>)
-When I visit <User>/spa/people/<User id>
+As an authenticated user <Admin>
+When I select People link from the left-hand side
+Then I should see People page
+When I input "Lyanna" into the Search field
+Then I should I see "Lyanna" as the only result
+When I select "Lyanna"
+Then I should see Lyanna's Profile Page
+
 Then I select 'Job' tab
 Then I should 'Reporting' section
-Verify that <user> is shown under 'Direct Reports'
+Verify that Thomas Mason is shown under 'Direct Reports'
 ```
 
 ### User Story #10 - Medium
