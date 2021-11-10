@@ -35,20 +35,7 @@ Then I should see the intelliHR public homepage
 Verify intelliHR logo is visible
 ```
 
-### User Story #2 - Medium
-
-```
-As an anonymous User
-When I visit https://www.intellihr.com
-Then I can find a link to 'Careers'
-When I click this link
-Then I am taken to the Careers page
-Then I click on the "Quality Engineer" career link
-Then I click on the "Apply Now" button to open the relevant SEEK page
-Verify content of "The Role" is visible
-```
-
-### User Story #3 - Easy
+### User Story #2 - Easy
 
 ```
 As a non-logged in user
@@ -57,7 +44,7 @@ Then I should see the login page <tenant>/auth/login
 Verify username and password fields are visible
 ```
 
-### User Story #4 - Medium
+### User Story #3 - Medium
 
 ```
 As an authenticated user <normal user>
@@ -68,7 +55,7 @@ Then I should see the dashboard
 Verify h1 which contains greeting is visible (eg. Good Morning, <name>)
 ```
 
-### User Story #5 - Hard
+### User Story #4 - Hard
 
 ```
 As an authenticated user <Manager>
@@ -87,7 +74,7 @@ Verify out of the 2 skills created, only the first skill is listed
 
 ```
 
-### User Story #6 - Easy
+### User Story #5 - Easy
 
 ```
 As an unauthenticated user <normal user>
@@ -98,7 +85,7 @@ Then I should see 'Page Not Found'
 Verify a sad intelliman image is visible
 ```
 
-### User Story #7 - Medium
+### User Story #6 - Medium
 
 ```
 As an authenticated user <Manager>
@@ -110,7 +97,7 @@ Then I select "Show Content" button within the 'Remuneration Schedule' section
 Verify that a salary figure is visible
 ```
 
-### User Story #8 - Very Hard
+### User Story #7 - Very Hard
 
 ```
 As an authenticated user <Admin>
@@ -132,7 +119,7 @@ Then I am returned to the profile page
 Verify the second email entry (demo@intellihr.com.au) now has the tag 'Work'
 ```
 
-### User Story #9 - Easy
+### User Story #8 - Easy
 
 ```
 As an authenticated user <Admin>
@@ -148,7 +135,7 @@ Then I should 'Reporting' section
 Verify that Thomas Mason is shown under 'Direct Reports'
 ```
 
-### User Story #10 - Medium
+### User Story #9 - Medium
 
 ```
 As an authenticated Admin (<Admin>)
