@@ -13,8 +13,6 @@ Please cover as many user stories as you can, whilst maintaining good readabilit
 
 Spend no more than 4 hours on this assessment.  It is not intended that you achieve 100% coverage in this time period. We would like to see what you can do in 4 hours time.
 
-**Note:  UAT environment is reset daily, do not expect data to persist.**
-
 **Note:  Account credentials for the tenant will be provided to you separately.**
 
 Bonus points (if you have capacities to do all of these, you are more than welcome to show us your skills and experience): 
