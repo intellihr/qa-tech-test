@@ -52,7 +52,9 @@ When I visit <tenant>/auth/login
 Then I should see the login page
 When I login with the correct credentials
 Then I should see the dashboard
-Verify h1 which contains greeting is visible (eg. Good Morning, <name>)
+Verify the greeting is visible (eg. Good Morning, <name>)
+
+Hint: make sure the test can pass at different time of the day (there are 3 different messages for morning, afternoon and night)
 ```
 
 ### User Story #4 - Hard
@@ -71,33 +73,9 @@ When I select the kebab menu for the second skill
 Then I select 'Delete' option
 Then I confirm, by selecting the 'Delete' option
 Verify out of the 2 skills created, only the first skill is listed
-
 ```
 
-### User Story #5 - Easy
-
-```
-As an unauthenticated user <normal user>
-When I visit <tenant>/configuration/edit
-Then I should see the login page
-When I login with the correct credentials
-Then I should see 'Page Not Found'
-Verify a sad intelliman image is visible
-```
-
-### User Story #6 - Medium
-
-```
-As an authenticated user <Manager>
-When I visit my profile page (left-hand side)
-Then I should see a 'Job' tab
-When I click on that tab
-Then I should see 'Remuneration Schedule' section
-Then I select "Show Content" button within the 'Remuneration Schedule' section
-Verify that a salary figure is visible
-```
-
-### User Story #7 - Very Hard
+### User Story #5 - Very Hard
 
 ```
 As an authenticated user <Admin>
@@ -108,15 +86,47 @@ Then I should I see "Lyanna" as the only result
 When I select "Lyanna"
 Then I should see Lyanna's Profile Page
 When I scroll down to 'Email Address' section
-Then I should see that the second email entry (demo@intellihr.com.au) has the tag 'Personal'
 
-Then I click the kebab button on the second email entry
+Verify that the position of 'demo@intellihr.com' is on the 1st row
+Verify the first email entry 'demo@intellihr.com' has the tag 'Primary' and 'Personal'
+Verify that the position of 'demo@intellihr.com.au' is on the 2nd row
+Verify the second email entry 'demo@intellihr.com.au' has the tag 'Personal'
+
+Then I click the kebab button on the second email entry (demo@intellihr.com.au)
 Then I should see 'Edit' and 'Delete' option
 Then I select 'Edit' option
-Then I select Work Email Address radio button
+Then I select 'Work Email Address' radio button
+Then I check the 'Primary Email Address' checkbox
 Then I press the Save button
 Then I am returned to the profile page
-Verify the second email entry (demo@intellihr.com.au) now has the tag 'Work'
+
+Verify that the position of 'demo@intellihr.com.au' is now on the 1st row
+Verify the first email entry 'demo@intellihr.com.au' now has the tag 'Primary' and 'Work'
+Verify that the position of 'demo@intellihr.com' is now on the 2nd row
+Verify the second email entry 'demo@intellihr.com' only has the tag 'Personal'
+```
+
+### User Story #6 - Easy
+
+```
+As an unauthenticated user <normal user>
+When I visit <tenant>/configuration/edit
+Then I should see the login page
+When I login with the correct credentials
+Then I should see 'Page Not Found'
+Verify a sad intelliman image is visible
+```
+
+### User Story #7 - Medium
+
+```
+As an authenticated user <Manager>
+When I visit my profile page (left-hand side)
+Then I should see a 'Job' tab
+When I click on that tab
+Then I should see 'Remuneration Schedule' section
+Then I select "Show Content" button within the 'Remuneration Schedule' section
+Verify that a salary figure is visible
 ```
 
 ### User Story #8 - Easy
@@ -141,5 +151,6 @@ Verify that Thomas Mason is shown under 'Direct Reports'
 As an authenticated Admin (<Admin>)
 When I visit People page
 Then I Click on 'Export People' button
-I can download a csv file and it is saved into <downloads> folder
+Then I select 'All People'
+Verify that a csv file has been downloaded
 ```
