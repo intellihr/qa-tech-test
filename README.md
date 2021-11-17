@@ -60,7 +60,7 @@ Hint: make sure the test can pass at different time of the day (there are 3 diff
 ### User Story #4 - Hard
 
 ```
-As an authenticated user <Manager>
+As an authenticated user <Admin>
 When I visit <tenant>/spa/settings/skills
 Then I press 'Create Skill' button
 Then I enter all of the mandatory data
