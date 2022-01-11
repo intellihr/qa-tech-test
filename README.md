@@ -33,6 +33,11 @@ As an anonymous User
 When I visit https://www.intellihr.com
 Then I should see the intelliHR public homepage
 Verify intelliHR logo is visible
+When I scroll to the bottom and select 'Case Studies'
+Then I should see multiple Case Studies
+When I select 'Fujitsu General'
+Then I should see a Case Study for Fujitsu
+Verify 'Download now' button is visible
 ```
 
 ### User Story #2 - Easy
