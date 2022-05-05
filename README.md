@@ -24,7 +24,7 @@ Bonus points (if you have capacities to do all of these, you are more than welco
 - Failed tests are retried a few times before failing
 - Documentation and comments as required
 - Tests can be retried multiple time without failing
-
+- Password are stored in a separate file (using dot env)
 
 ### User Story #1  - Easy
 
@@ -125,29 +125,29 @@ Verify a sad intelliman image is visible
 ### User Story #7 - Medium
 
 ```
-As an authenticated user <Manager>
+As an authenticated user <Admin>
 When I visit my profile page (left-hand side)
 Then I should see a 'Job' tab
 When I click on that tab
 Then I should see 'Remuneration Schedule' section
-Then I select "Show Content" button within the 'Remuneration Schedule' section
+Then I select "Press to Reveal" button within the 'Remuneration Schedule' section
 Verify that a salary figure is visible
 ```
 
 ### User Story #8 - Easy
 
 ```
-As an authenticated user <Admin>
+As an authenticated user <Manager>
 When I select People link from the left-hand side
 Then I should see People page
-When I input "Lyanna" into the Search field
-Then I should I see "Lyanna" as the only result
-When I select "Lyanna"
-Then I should see Lyanna's Profile Page
+When I input "Kieran" into the Search field
+Then I should I see "Kieran Blake" as the only result
+When I select "Kieran"
+Then I should see Kieran's Profile Page
 
 Then I select 'Job' tab
 Then I should 'Reporting' section
-Verify that Thomas Mason is shown under 'Direct Reports'
+Verify that "Jimbo (Jim) Jenkins" is shown under 'Direct Reports'
 ```
 
 ### User Story #9 - Medium
