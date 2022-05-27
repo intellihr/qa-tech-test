@@ -141,12 +141,12 @@ As an authenticated user <Manager>
 When I select People link from the left-hand side
 Then I should see People page
 When I input "Kieran" into the Search field
-Then I should I see "Kieran Blake" as the only result
-When I select "Kieran"
+Then I should see "Kieran Blake" as the only result
+When I select "Kieran Blake" from the result
 Then I should see Kieran's Profile Page
 
 Then I select 'Job' tab
-Then I should 'Reporting' section
+Then I should see 'Reporting' section
 Verify that "Jimbo (Jim) Jenkins" is shown under 'Direct Reports'
 ```
 
